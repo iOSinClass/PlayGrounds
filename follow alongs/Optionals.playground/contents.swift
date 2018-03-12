@@ -34,11 +34,20 @@ let dave = "Dave"
 
 // Optional Binding
 
-
-
+if let valueIfNonNil = Int("Dave") {
+    print("The value is \(valueIfNonNil)")
+} else {
+    print("value was nil")
+}
 
 
 
 
 
 // Implicitly Unwrapped Optionals
+
+import UIKit
+
+var possibleButton: UIButton? = UIButton(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 100, height: 100)))
+
+
